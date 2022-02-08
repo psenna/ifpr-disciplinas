@@ -2,3 +2,6 @@ site_name: Docs-ifpr
 theme:
     name: material
     language: pt
+repo_name: psenna/ifpr-disciplinas
+
+repo_url: https://github.com/psenna/ifpr-disciplinas
