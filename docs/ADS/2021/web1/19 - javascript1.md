@@ -14,6 +14,7 @@ Vamos começar criando uma página simples e colocando um título nela nela. Cop
     </head>
     <body>
         <h1></h1>
+        <p></p>
     </body>
 </html>
 ```
