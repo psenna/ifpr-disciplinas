@@ -1,0 +1,4 @@
+site_name: Docs-ifpr
+theme:
+    name: material
+    language: pt
