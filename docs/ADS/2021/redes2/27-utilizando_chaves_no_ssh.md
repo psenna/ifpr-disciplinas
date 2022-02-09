@@ -10,7 +10,7 @@ Primeiro vamos criar uma chave assimétrica para utilizarmos, vamos fazer isso c
 
 ```
  ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
- ```
+```
 
 Essa chave vai ser criada na pasta sua pasta .ssh na pasta do seu usuário. É só ir seguindo as instruções que vão aparecendo no terminal.
 
