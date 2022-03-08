@@ -45,12 +45,14 @@ Na pasta scripts vamos criar o arquivo *compra.js* e nele vamos criar duas funç
 
 ```
 function naoDesista(e) {
-    var target = e.target;
+    e = e || window.event;
+    var target = e.target || e.srcElement;
     target.textContent = "Não vá embora"
 }
 
 function ultimasUnidades(e) {
-    var target = e.target;
+    e = e || window.event;
+    var target = e.target || e.srcElement;
     target.textContent = "Nosso estoque está acabando, compre agora!!!"
 }
 ```
