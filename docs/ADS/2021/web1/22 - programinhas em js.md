@@ -24,6 +24,7 @@ Primeiro vamos criar um form para que o nosso usuário possa digitar as informa�
     <title>Validando formulários</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" crossorigin="anonymous"></script>
+    <script defer src="scripts/combustivel.js"></script>
 </head>
 <body>
     <div class="container">
