@@ -45,8 +45,8 @@ VALUES
 INSERT INTO nacoes (id, nome, elemento_principal_id)
 VALUES 
     (1, 'Nacao do fogo', 1),
-    (2, 'Tribo da água do sul', 2),
-    (3, 'Tribo da água do norte', 2),
+    (2, 'Tribo da agua do sul', 2),
+    (3, 'Tribo da agua do norte', 2),
     (4, 'Reino da terra', 3),
     (5, 'Nomades do ar', 4);
 
