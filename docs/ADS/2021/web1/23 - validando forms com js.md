@@ -106,4 +106,4 @@ Utilizando o código acima, modifique a função de validação para que:
 
 2. Mostre um erro caso o email não seja válido (vamos considerar aqui que o email é válido se tiver 1 @) [dica](https://www.w3schools.com/jsref/jsref_includes.asp)
 
-3. Mostre um erro caso a pessoa tenha digitado uma senha diferente na confirmação de senha. [dica](https://www.w3schools.com/java/ref_string_equals.asp)
+3. Mostre um erro caso a pessoa tenha digitado uma senha diferente na confirmação de senha. (== funciona)
