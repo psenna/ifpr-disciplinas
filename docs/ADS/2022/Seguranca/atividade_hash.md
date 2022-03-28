@@ -1,6 +1,6 @@
-# Atividade 
+# Atividade Hash
 
-Vamos validar um "bloco de transação" utilizando o algoritmo de prova de trabalho como o SHA256.
+Vamos validar um "bloco de transação" utilizando o algoritmo de prova de trabalho com o SHA256.
 
 Para isso, vamos encontrar um número que concatenado(como string) com o seu nome completo tenha um hash que inicie com uma quantidade de zeros.
 
@@ -10,7 +10,7 @@ Essa atividade deve ser resolvida da força bruta com um programa seguindo os se
 
 * O código deve ser em Java, Python, PHP ou ShellScript
 * Você deve encontrar um número que, concatenado com o seu nome, tenha **8** zeros no início do HASH gerado pelo SHA256 na representação em hexadecimal (32 bits se alguem for fazer em binário).
-* Devem ser enviados no classroom o código fonte e um arquivo com o seu nome concatenado com o número, a quantidade de tentativas que foram necessárias e o tempo que levou para encontrar o número.
+* Devem ser enviados no classroom o código fonte e um arquivo de texto com o seu nome concatenado com o número, a quantidade de tentativas que foram necessárias e o tempo que levou para encontrar o número.
 
 ## Pseudo código
 
