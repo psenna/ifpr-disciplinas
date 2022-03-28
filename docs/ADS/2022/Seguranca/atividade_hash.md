@@ -87,3 +87,4 @@ class provaDeTrabalho {
 1. Teste com números pequenos de 0s no início, 1 por exemplo, antes de colocar para rodar com o valor do exercício.
 2. Pode demorar para encontrar o número, não deixe para a última hora.
 3. Teste o hash gerado [nesse site](https://emn178.github.io/online-tools/sha256.html). No meu caso, o resultado foi "Pedro Senna de Campos6579364204" e vocês podem testar e ver que o hash começa com 8 zeros na representação em hexa.
+4. Usem **Long**.
