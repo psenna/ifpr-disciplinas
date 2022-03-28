@@ -44,15 +44,6 @@ class provaDeTrabalho {
         }
     }
 
-    public static int coutZerosStart(String hash) {
-        int count;
-        for(count = 0; count < hash.length(); count++) {
-            if(hash.charAt(count) != '0'){
-                break;
-            }
-        }
-        return count;
-    }
 
     public static String convertByteToHexadecimal(byte[] byteArray) {
     int len = byteArray.length;
