@@ -44,7 +44,6 @@ class provaDeTrabalho {
         }
     }
 
-
     public static String convertByteToHexadecimal(byte[] byteArray) {
     int len = byteArray.length;
 
