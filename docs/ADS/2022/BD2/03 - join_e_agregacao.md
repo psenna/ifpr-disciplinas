@@ -211,11 +211,11 @@ Caso você tenha que mandar o seu "cobrador" para uma cidade, como podemos desco
 
 ## Atividades
 
-Utilizando o banco dessa aula, faça as seguintes consultas:
+Utilizando o banco desta aula, faça as seguintes consultas:
 
-1. Mostre uma lista das cidades que a empresa possui algum cliente.
+* Mostre uma lista das cidades que a empresa possui algum cliente.
 
-2. Mostre a quantidade de clientes que a empresa possui em cada cidade.
+* Mostre a quantidade de clientes que a empresa possui em cada cidade.
 
 ```
 +----------------+---------------------+
@@ -234,8 +234,8 @@ Utilizando o banco dessa aula, faça as seguintes consultas:
 +----------------+---------------------+
 ```
 
-3. Mostre a quantidade de compras que cada cliente fez.
+* Mostre a quantidade de compras que cada cliente fez.
 
-4. Mostre o valor médio das compras por cidade, em ordem decrescente.
+* Mostre o valor médio das compras por cidade, em ordem decrescente.
 
-5. A empresa quer descobrir quem é o melhor cliente(maior soma das compras) de janeiro em cada cidade para mandar um presente. Como podemos fazer uma consulta para ajudar o gerente nessa tarefa?
+* A empresa quer descobrir quem é o melhor cliente(maior soma das compras) de janeiro em cada cidade para mandar um presente. Como podemos fazer uma consulta para ajudar o gerente nessa tarefa?
