@@ -24,6 +24,19 @@ CREATE TABLE vendas (
     FOREIGN KEY (cliente_id) REFERENCES clientes(id)
 );
 
+CREATE OR REPLACE VIEW clientes_relatorio
+    AS
+        SELECT cli.nome AS 'nome', 
+            cid.nome AS 'cidade', 
+            COUNT(ve.valor_total) AS 'venda', 
+            COALESCE(SUM(valor_total), 0) AS 'valor_vendas',
+            COALESCE(SUM(valor_total - valor_pago),0) AS 'valor_a_pagar'
+        FROM
+            clientes AS cli
+            JOIN cidades AS cid ON cli.cidade_id = cid.id
+            LEFT JOIN vendas AS ve ON ve.cliente_id = cli.id
+        GROUP BY cli.id;
+
 INSERT INTO cidades (id, nome) 
 VALUES 
     (1, 'Umuarama'),
