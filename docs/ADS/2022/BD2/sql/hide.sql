@@ -8,3 +8,11 @@ SELECT cid.nome AS 'cidade', count(cli.id) AS 'quantidade_clientes'
     FROM cidades AS cid
     LEFT JOIN clientes AS cli ON  cid.id = cli.cidade_id
     GROUP BY cid.id;
+
+
+SELECT cid.*, SUM(v.valor_total - v.valor_pago) AS 'divida'
+    FROM cidades AS cid
+    JOIN clientes AS cli ON  cid.id = cli.cidade_id
+    JOIN vendas AS v ON v.cliente_id = cli.id
+    GROUP BY cid.id
+    ORDER BY divida desc;

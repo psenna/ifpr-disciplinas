@@ -113,7 +113,7 @@ Vamos juntar todas as vendas que aconteceram no mesmo dia.
 ```
 SELECT * 
     FROM vendas as v
-    GROUP BY v.data_operacao, valor_total;
+    GROUP BY v.data_operacao;
 
 +----+------------+-------------+------------+---------------+
 | id | cliente_id | valor_total | valor_pago | data_operacao |
@@ -206,7 +206,24 @@ Caso você tenha que mandar o seu "cobrador" para uma cidade, como podemos desco
 
 ![aang](./imgs/rocky.jpeg)
 
-(fazer em sala.)
+```
+SELECT cid.*, SUM(v.valor_total - v.valor_pago) AS 'divida'
+    FROM cidades AS cid
+    JOIN clientes AS cli ON  cid.id = cli.cidade_id
+    JOIN vendas AS v ON v.cliente_id = cli.id
+    GROUP BY cid.id
+    ORDER BY divida desc;
+
++----+----------+--------+
+| id | nome     | divida |
++----+----------+--------+
+|  1 | Umuarama |    720 |
+|  2 | Maringa  |    610 |
+|  5 | Xambre   |    210 |
+|  3 | Londrina |     80 |
+|  4 | Cascavel |     40 |
++----+----------+--------+
+```
 
 
 ## Atividades
