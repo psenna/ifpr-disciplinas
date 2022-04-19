@@ -130,6 +130,71 @@ Dica: faça o select primeiro, quando tiver o select que funcione, crie a view.
 
 * crie uma visão contendo o nome do cliente e o nome da cidade.
 
+```
+select * from visao;
++---------------+----------+
+| nome          | cidade   |
++---------------+----------+
+| Joao          | Umuarama |
+| Ze            | Umuarama |
+| Maria         | Umuarama |
+| Bob esponja   | Umuarama |
+| Goku          | Maringa  |
+| Bulma         | Maringa  |
+| Leia          | Londrina |
+| Luke          | Londrina |
+| Anakin        | Londrina |
+| Tony Gordo    | Cascavel |
+| Aldo o apache | Xambre   |
+| Hans Landa    | Xambre   |
++---------------+----------+
+```
+
 * Crie uma visão contendo as vendas com o nome do cliente, o valor total e o valor a receber.
 
+```
+select * from visao;
++---------------+-------------+---------------+
+| nome          | valor_total | valor_a_pagar |
++---------------+-------------+---------------+
+| Joao          |         100 |            80 |
+| Ze            |         200 |            80 |
+| Ze            |         300 |            55 |
+| Goku          |         200 |             0 |
+| Bulma         |         100 |            30 |
+| Goku          |         300 |           220 |
+| Leia          |         200 |            80 |
+| Goku          |         200 |           180 |
+| Maria         |         300 |            80 |
+| Maria         |         100 |            10 |
+| Ze            |         200 |            80 |
+| Joao          |         200 |            55 |
+| Ze            |         300 |           180 |
+| Bob esponja   |         200 |            50 |
+| Goku          |         200 |           180 |
+| Maria         |         100 |            50 |
+| Tony Gordo    |         100 |            40 |
+| Aldo o apache |         200 |           130 |
+| Hans Landa    |         100 |            80 |
++---------------+-------------+---------------+
+```
+
 * Crie uma visão contendo o nome das cidades, quantidade de clientes na cidade, total de vendas na cidade e valor que temos a receber em cada cidade. 
+
+```
+select * from visao;
++----------------+---------------------+-------------------+
+| nome           | quantidade_clientes | quantidade_vendas |
++----------------+---------------------+-------------------+
+| Umuarama       |                   4 |                10 |
+| Maringa        |                   2 |                 5 |
+| Londrina       |                   3 |                 1 |
+| Cascavel       |                   1 |                 1 |
+| Xambre         |                   2 |                 2 |
+| Toledo         |                   0 |                 0 |
+| Navirai        |                   0 |                 0 |
+| Mundo Novo     |                   0 |                 0 |
+| Nova Andradina |                   0 |                 0 |
+| Cedro          |                   0 |                 0 |
++----------------+---------------------+-------------------+
+```

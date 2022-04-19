@@ -26,10 +26,52 @@ Utilizando esse banco, crie:
 
 * Uma view que mostre quantas tropas no total cada exercito possui(sem detalhar se está ativa ou inativa).
 
+```
+select * from visao;
++-----------+-------------------+
+| nome      | quantidade_tropas |
++-----------+-------------------+
+| Republica |                20 |
+| Federacao |                10 |
++-----------+-------------------+
+```
+
 * Uma view que mostre a quantidade de cada tipo de tropa no combate (sem detalhar se está ativa ou inativa).
+
+```
+select * from visao;
++-------------+------------+
+| tipo_tropas | quantidade |
++-------------+------------+
+| clones      |         18 |
+| jedy        |          2 |
+| droids      |         10 |
++-------------+------------+
+```
 
 * Uma view que mostre as frentes de combate e a quantidade de soldados ativos em cada uma delas.
 
+```
+select * from visao;
++-----------+------------+
+| frentes   | quantidade |
++-----------+------------+
+| colinas   |         11 |
+| planicies |          9 |
++-----------+------------+
+```
+
+
 * Uma view que mostre o nome do exercito, o nome das frentes de batalha e a força soma da força das tropas ativas do exercito nessa frente.
 
-
+```
+select * from visao;
++-----------+-----------+-------------+
+| exercito  | frentes   | forca_total |
++-----------+-----------+-------------+
+| Republica | colinas   |         112 |
+| Republica | planicies |         108 |
+| Federacao | colinas   |          20 |
+| Federacao | planicies |          20 |
++-----------+-----------+-------------+
+```
