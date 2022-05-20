@@ -18,7 +18,9 @@ Banco dos alunos: [alunos.sql](./sql/alunos.sql)
 +----+--------+------+
 ```
 
-**Solução na sala**
+```
+
+```
 
 ## Utilizando subqueries
 
