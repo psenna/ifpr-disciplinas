@@ -35,7 +35,36 @@ Acessamos eles utilizando o NEW e o OLD.
 
 Vamos criar um trigger para atualizar o saldo da conta quando acontecer uma operação de crédito ou débito.
 
-**Em Sala**
+Operação de crédito:
+```
+DELIMITER $
+
+CREATE OR REPLACE TRIGGER felicidade AFTER INSERT
+ON creditos
+FOR EACH ROW
+BEGIN
+	UPDATE contas SET saldo = saldo + NEW.valor
+	WHERE id = NEW.conta_id;
+END$
+
+DELIMITER ;
+```
+
+Operação de débito:
+
+```
+DELIMITER $
+
+CREATE OR REPLACE TRIGGER tristeza AFTER INSERT
+ON debitos
+FOR EACH ROW
+BEGIN
+	UPDATE contas SET saldo = saldo - NEW.valor
+	WHERE id = NEW.conta_id;
+END$
+
+DELIMITER ;
+```
 
 ## Atividades
 
