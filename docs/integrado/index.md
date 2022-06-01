@@ -1,1 +1,0 @@
-# Curso técnico integrado em informática
