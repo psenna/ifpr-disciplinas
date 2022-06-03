@@ -2,6 +2,14 @@
 
 Nessa aula vamos ver triggers com estruturas condicionais (IF).
 
+## Banco
+
+Para essa aula, vamos utilizar o banco [banco.sql](./sql/banco.sql)).
+
+Nele temos um cliente que possui uma conta. Nessa conta podemos fazer operações de debito e crédito e operações de investimento e resgate desse invertimento.
+
+Na conta temos os campos saldo e saldo_investimentos.
+
 ## IF em SQL
 
 Estrutura do IF:
