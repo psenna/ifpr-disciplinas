@@ -16,7 +16,7 @@ Na conta temos os campos saldo e saldo_investimentos.
 
 ## Sintaxe da Trigger
 
-```
+```SQL
 CREATE TRIGGER nome momento evento
 ON tabela
 FOR EACH ROW
@@ -36,7 +36,7 @@ Acessamos eles utilizando o NEW e o OLD.
 Vamos criar um trigger para atualizar o saldo da conta quando acontecer uma operação de crédito ou débito.
 
 Operação de crédito:
-```
+```SQL
 DELIMITER $
 
 CREATE OR REPLACE TRIGGER felicidade AFTER INSERT
@@ -52,7 +52,7 @@ DELIMITER ;
 
 Operação de débito:
 
-```
+```SQL
 DELIMITER $
 
 CREATE OR REPLACE TRIGGER tristeza AFTER INSERT

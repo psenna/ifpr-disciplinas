@@ -6,9 +6,9 @@ No dia da estreia do jogo, inadiável pois a empresa gastou 1000 reais em market
 
 Mas a vida é uma caixinha de surpresas, e os estagiários que sabiam como fazer o deploy do sistema foram em um Happy Hour no dia anterior e não estão em condições de trabalhar.
 
-Nessa caos, sobrou para o estagiário que mexe com o banco, no caso você, salvar o dia. As correções deve ser realizadas direto no banco com triggers e views. A sua promoção para estagiário Sênior, o futuro da GamesSoft e uma pizza grande de sabores promocionais estão na sua mão.
+Nesse caos, sobrou para o estagiário que mexe com o banco, no caso você, salvar o dia. As correções devem ser realizadas direto no banco com triggers e views. A sua promoção para estagiário Sênior, o futuro da GamesSoft e uma pizza grande de sabores promocionais estão na sua mão.
 
-PS: Bill Portões nunca entendeu joins, por isso ele os acha ruins. Você não pode utilizar joins nas sua soluções.
+PS: Bill Portões nunca entendeu os joins, por isso ele os acha ruins. Você não pode utilizar joins nas suas soluções.
 
 ## Banco
 
@@ -24,8 +24,8 @@ Ele contém um usuário, seus recursos, suas unidades e suas construções.
 
 * Para mostrar os dados do jogo no painel, o sistema esperava que existisse uma "tabela" com nome "status_por_jogador" que deve trazer a quantidade de unidades ativas, a quantidade de construções ativas e a quantidade dos recursos ouro e madeira que o usuário possui. Corrija esse problema sem usar joins.
 
-* O mesmo problema que ocorria com as unidades está ocorrendo com as construções, elas não estão sendo removidas (inativadas) quando sua vida estão abaixo de 0. Corrija esse problema.
+* O mesmo problema que ocorria com as unidades está ocorrendo com as construções, elas não estão sendo removidas (inativadas) quando sua vida está abaixo de 0. Corrija esse problema.
 
-* Em testes, perceberam que o sistema não está impedindo que unidades sejam criadas, mesmo que o usuário não possua os recursos necessários para cria-las (na tabela tipos_unidades tem a quantidade de recursos necessários para cada uma). Verifique se o usuário possui os resursos necessários e impessa a criação da unidade caso não tenha.
+* Em testes, perceberam que o sistema não está impedindo que unidades sejam criadas, mesmo que o usuário não possua os recursos necessários para cria-las (na tabela tipos_unidades tem a quantidade de recursos necessários para cada uma). Verifique se o usuário possui os recursos necessários e impeça a criação da unidade caso não tenha.
 
-* Após criar uma unidade, o sistema não está removendo os recursos do usuário (dinheiiro infinito). Para resolver isso, crie alguma solução que após a criação da unidade, remova os recursos do jogador (lançando entradas em recursos com valores negativos).
+* Após criar uma unidade, o sistema não está removendo os recursos do usuário (dinheiro infinito). Para resolver isso, crie alguma solução que após a criação da unidade, remova os recursos do jogador (lançando entradas em recursos com valores negativos).

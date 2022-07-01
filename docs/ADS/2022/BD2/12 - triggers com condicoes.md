@@ -4,7 +4,7 @@ Nessa aula vamos ver triggers com estruturas condicionais (IF).
 
 ## Banco
 
-Para essa aula, vamos utilizar o banco [banco.sql](./sql/banco.sql)).
+Para essa aula, vamos utilizar o banco [banco.sql](./sql/banco.sql).
 
 Nele temos um cliente que possui uma conta. Nessa conta podemos fazer operações de debito e crédito e operações de investimento e resgate desse invertimento.
 
@@ -14,7 +14,7 @@ Na conta temos os campos saldo e saldo_investimentos.
 
 Estrutura do IF:
 
-```
+```SQL
 IF condição THEN 
    declarações;
 END IF;
@@ -23,7 +23,7 @@ END IF;
 Estutura do IF ELSE:
 
 
-```
+```SQL
 IF condição THEN
    declarações;
 ELSE
@@ -32,7 +32,7 @@ END IF;
 ```
 
 
-```
+```SQL
 IF condição THEN
    statements;
 ELSEIF condição-elseif THEN
@@ -52,11 +52,22 @@ Para pararmos uma query, utilizamos o [signal](https://dev.mysql.com/doc/refman/
 
 O valor de uma transação (débito, crédito, investimento ou resgate) deve ser maior que zero. 
 
-**Resolver em Sala**
+```SQL
+DELIMITER $
 
-O nome do cliente deve ter um espaço em branco.
+CREATE OR REPLACE TRIGGER debito_maior_zero
+BEFORE INSERT ON debitos
+FOR EACH ROW
+BEGIN
+    IF NOT NEW.valor > 0 THEN
+    	SIGNAL SQLSTATE '45000'
+      	SET MESSAGE_TEXT = 'Valor tem que ser maior que zero';
+	END IF;
+END$
 
-**Resolver em Sala**
+DELIMITER ;
+
+```
 
 ## Atividades
 
