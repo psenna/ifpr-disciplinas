@@ -60,3 +60,26 @@ CREATE TABLE construcoes (
     FOREIGN KEY (usuario_id) REFERENCES usuarios(id)
 );
 
+INSERT INTO usuarios (nome)
+VALUES
+("Pedro"),
+("Naruto"),
+("Goku");
+
+INSERT INTO tipos_unidades (nome, custo_ouro, custo_madeira, dano_padrao, vida_padrao)
+VALUES
+("cavaleiro", 100, 50, 7, 26);
+
+INSERT INTO tipos_recursos (nome)
+VALUES
+    ("ouro"),
+    ("madeira");
+
+INSERT INTO unidade (tipo_unidade_id, usuario_id)
+VALUES
+(1, 1);
+
+INSERT INTO recursos (quantidade, usuario_id, tipo_recurso_id)
+VALUES
+(95, 1, 1);
+
